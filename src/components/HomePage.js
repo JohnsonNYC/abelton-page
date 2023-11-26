@@ -229,22 +229,39 @@ const HomePage = () => {
         </div>
       </div>
 
-      <footer className="mt-14 border-t border-gray-500">
-        <div>Abelton</div>
-        <div className="flex gap-6">
-          <div className="border">
-            <div className="text-xl">Register Live or Push</div>
-            <div className="text-xl">About Abelton</div>
-            <div className="text-xl">Jobs</div>
-            <div className="flex">
-              <Facebook />
-              <Twitter />
-              <Youtube />
-              <Instagram />
+      <footer className="mt-14 p-20 border-t border-gray-300">
+        <div className="text-4xl">Abelton</div>
+        <div className="flex justify-between mt-1.5">
+          <div>
+            <div className="text-xl flex items-center ">
+              Register Live or Push <ChevronRight size={16} />
+            </div>
+            <div className="text-xl flex items-center">
+              About Abelton <ChevronRight size={16} />
+            </div>
+            <div className="text-xl flex items-center">
+              Jobs <ChevronRight size={16} />
+            </div>
+            <div className="flex gap-2.5">
+              <div className="w-10 h-10 bg-blue-500 flex justify-center items-center">
+                <Facebook fill="white" stroke="none" />
+              </div>
+
+              <div className="w-10 h-10 bg-blue-400 flex justify-center items-center">
+                <Twitter fill="white" stroke="none" />
+              </div>
+
+              <div className="w-10 h-10 bg-red-600 flex justify-center items-center">
+                <Youtube fill="white" />
+              </div>
+
+              <div className="w-10 h-10 bg-yellow-500 flex justify-center items-center">
+                <Instagram stroke="white" />
+              </div>
             </div>
           </div>
 
-          <div className="flex flex-col border">
+          <div className="flex flex-col ">
             <div className="text-3xl ">Education</div>
             <div className="text-xl ">Offers for students and teachers</div>
             <div className="text-xl ">Abelton for the Classroom</div>
@@ -253,7 +270,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col border max-w-[470px]">
+          <div className="flex flex-col  max-w-[470px]">
             <div className="text-3xl ">Sign up to our news letter</div>
             <div className="text-xl">
               Enter your email address to stay up to date with the latest
